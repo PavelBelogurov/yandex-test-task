@@ -1,0 +1,1175 @@
+* {
+  font-family: "Golos Text", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
+  line-height: 120%;
+  color: #313131;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  display: block !important;
+}
+
+.golos-text {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-text {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  background: url("./images/1920.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+}
+
+.header__content {
+  width: 100%;
+  max-width: 1223px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  padding: 26px 0 62px 0;
+  align-items: center;
+}
+
+.header__logo-horses {
+  display: flex;
+  gap: 1.73px;
+}
+
+.header__logo-text {
+  font-size: 16.65px;
+  line-height: 108%;
+  font-weight: 700;
+  margin-left: 6.35px;
+  color: #595653;
+}
+
+.header__headline {
+  width: 542px;
+}
+
+.header__headline h1 {
+  font-size: 60px;
+  line-height: 110%;
+}
+
+.header__headline-middle {
+  text-align: center;
+}
+
+.header__headline-bottom {
+  text-align: right;
+}
+
+.header__description {
+  line-height: 130%;
+  width: 542px;
+  text-align: center;
+  font-size: 18px;
+  margin: 24px 0 40px 0;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  width: 263px;
+  height: 72px;
+  border-radius: 66px;
+  padding: 20px 43px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.black-button {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.black-button:hover {
+  background-color: #fbce51;
+  color: #1f1f1f;
+}
+
+.white-button {
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  padding: 20px 85px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.white-button:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  background: #f54932;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header__ticker {
+  display: inline-flex;
+  animation: scroll 15s linear infinite;
+}
+
+.header__ticker span {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 22px;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.support {
+  display: flex;
+  gap: 64px;
+  width: 1222px;
+  margin: 80px auto 0;
+  align-items: center;
+}
+
+.support__text {
+  width: 764px;
+}
+
+.common-text,
+.red-text {
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+  line-height: 135%;
+  text-transform: uppercase;
+  font-feature-settings: "lnum";
+}
+
+.red-text {
+  color: #f54932;
+  font-weight: 700;
+}
+
+.support__image {
+  width: 394px;
+  height: 250px;
+}
+
+.info {
+  width: 1330px;
+  margin: 17px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.info__content {
+  margin-top: 16px;
+}
+
+.info__image {
+  width: 528px;
+  height: 607px;
+  margin-left: 27px;
+}
+
+.info__text {
+  width: 704px;
+  margin-bottom: 60px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+}
+
+.table td {
+  border-top: 2px solid #d0d0d0;
+  border-bottom: 2px solid #d0d0d0;
+  padding: 15px;
+}
+
+.table tr:first-child td {
+  border-top: none;
+  padding-top: 0;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.table td + td {
+  border-left: 2px solid #d0d0d0;
+}
+
+.table td:first-child {
+  opacity: 0.7;
+  padding-left: 0;
+  width: 306px;
+}
+
+.table td:last-child {
+  font-weight: 600;
+}
+
+.info__admin {
+  margin-top: 48px;
+}
+
+.info__admin a {
+  color: #3057a2;
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+}
+
+.discount {
+  text-decoration: line-through;
+  text-decoration-color: #f54932;
+  text-decoration-thickness: 2px;
+  margin-right: 6px;
+}
+
+.stages {
+  width: 1222px;
+  margin: 168px auto 0;
+  position: relative;
+}
+
+.stages__title-name {
+  font-family: "Merriweather", serif;
+  font-size: 54px;
+  line-height: 120%;
+  width: 806px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 54px;
+}
+
+.stages__blue-title {
+  display: inline-block;
+  color: #3057a2;
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  max-width: 17.5rem;
+  line-height: 120%;
+  text-transform: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.stages__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stages__card {
+  padding: 20px;
+  width: 394px;
+  height: 112px;
+  display: flex;
+  gap: 16px;
+  background-image: url(./images/card-back.png);
+  background-size: cover;
+}
+
+.svg-number {
+  width: 36px;
+  height: 36px;
+}
+
+.stages__card-text {
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.card1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.card3 {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+  height: 244px;
+}
+
+.card4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.card5 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.card6 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 3;
+  height: 136px;
+}
+
+.card7 {
+  position: relative;
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  width: 808px;
+  height: 136px;
+}
+
+.stages__card-text {
+  width: 446px;
+  font-weight: 600;
+}
+
+.stages__card-airplane {
+  position: absolute;
+  top: -95px;
+  left: 470px;
+  width: 401px;
+}
+
+.members {
+  width: 1222px;
+  margin: 200px auto 140px;
+}
+
+.members__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.members__title {
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  font-size: 54px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.members__buttons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.svg-container {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.members__image {
+  width: 320px;
+  height: 320px;
+  margin-bottom: 28px;
+}
+
+.members__slide {
+  display: flex;
+  flex-direction: column;
+  width: 394px;
+  align-items: center;
+}
+
+.members__slide-descr {
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.members__descr {
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.members__slide-btn {
+  width: 113px;
+  height: 35px;
+  padding: 12px;
+  border-radius: 62px;
+  color: #3057a2;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #3057a2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.members__slide-btn:hover {
+  color: #ffffff;
+  background-color: #3057a2;
+}
+
+.members__slider {
+  display: flex;
+  overflow: hidden;
+  width: 1222px;
+}
+
+.members__wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.members__slide {
+  flex: 0 0 auto;
+  width: 394px;
+  margin-right: 20px;
+}
+
+.members__slide:last-child {
+  margin-right: 0;
+}
+
+.members__counter span:nth-of-type(2),
+.members__counter span:nth-of-type(3) {
+  opacity: 0.6;
+}
+
+.svg-container:hover svg circle {
+  fill: #fbce51;
+  transition: all 0.2s ease;
+}
+
+.members__counter {
+  width: 36px;
+}
+
+.members__counter {
+  user-select: none;
+}
+
+.footer {
+  background-color: #e9ded4;
+  box-sizing: border-box;
+  padding: 40px 0 72px;
+  margin-top: auto;
+}
+
+.footer__text {
+  width: 1222px;
+  margin: 0 auto;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.stages__mobile-container {
+  display: none;
+}
+
+.stages__card-airplane-mobile {
+  display: none;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1366px) {
+  .header__content {
+    max-width: 1100px;
+  }
+  .support,
+  .info,
+  .stages,
+  .members,
+  .footer__text {
+    width: 1100px;
+  }
+
+  .stages__card {
+    width: 350px;
+  }
+
+  .card7 {
+    width: 730px;
+  }
+
+  .stages__card-text {
+    width: 400px;
+  }
+
+  .stages__card-text {
+    font-size: 18px;
+  }
+
+  .stages__card-airplane {
+    width: 350px;
+    top: -75px;
+    left: 450px;
+  }
+
+  .members__slider {
+    width: 1100px;
+  }
+  .members__slide {
+    width: 350px;
+  }
+
+  .info__image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .info__content {
+    width: 650px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__headline h1 {
+    font-size: 50px;
+  }
+
+  .header__headline-bottom {
+    text-align: center;
+  }
+
+  .header__description {
+    font-size: 16px;
+    width: 480px;
+  }
+
+  .header__buttons {
+    flex-direction: column;
+    width: 480px;
+    align-items: center;
+  }
+
+  .header__content {
+    max-width: 1000px;
+  }
+  .support,
+  .info,
+  .stages,
+  .members,
+  .footer__text {
+    width: 1000px;
+  }
+
+  .stages__card {
+    width: 310px;
+  }
+
+  .card7 {
+    width: 660px;
+  }
+
+  .stages__card-text {
+    width: 380px;
+  }
+
+  .stages__card-text {
+    font-size: 16px;
+  }
+
+  .stages__card-airplane {
+    width: 300px;
+    top: -75px;
+    left: 430px;
+  }
+
+  .members__slider {
+    width: 1000px;
+  }
+  .members__slide {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__headline h1 {
+    font-size: 40px;
+  }
+
+  .header__logo {
+    margin-left: 20px;
+  }
+  .header__headline-bottom,
+  .merriweather-text {
+    text-align: center;
+    width: 360px;
+  }
+
+  .header__description {
+    font-size: 16px;
+    width: 360px;
+  }
+
+  .header__buttons {
+    flex-direction: column;
+    width: 360px;
+    align-items: center;
+  }
+
+  .header__content {
+    max-width: 740px;
+  }
+  .support,
+  .info,
+  .stages,
+  .members,
+  .footer__text {
+    max-width: 740px;
+  }
+
+  .info__text {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .info__admin {
+    margin-top: 26px;
+  }
+
+  .support {
+    margin: 60px auto 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .stages__title-name {
+    font-size: 40px;
+    width: 780px;
+    margin-bottom: 40px;
+  }
+
+  .stages {
+    margin-top: 80px;
+  }
+
+  .stages__blue-title {
+    font-size: 16px;
+    max-width: 12rem;
+  }
+
+  .support__text {
+    width: 470px;
+  }
+
+  .support__image {
+    width: 295.5px;
+    height: 187.5px;
+  }
+
+  .stages__card {
+    width: 230px;
+    gap: 8px;
+  }
+
+  .card7 {
+    width: 490px;
+  }
+
+  .stages__card-text {
+    width: 270px;
+  }
+
+  .stages__card-text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .stages__card-airplane {
+    width: 190px;
+    top: -25px;
+    left: 320px;
+  }
+
+  .members__slider {
+    width: 750px;
+  }
+  .members__slide {
+    width: 320px;
+  }
+
+  .common-text,
+  .red-text {
+    font-size: 24px;
+  }
+
+  .members__title {
+    font-size: 40px;
+  }
+
+  .members {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .members__slide {
+    width: 230px;
+  }
+
+  .members__slide-descr,
+  .members__descr {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .table {
+    font-size: 16px;
+  }
+
+  .members__image {
+    width: 230px;
+    height: 230px;
+  }
+
+  .info__admin a {
+    font-size: 18px;
+  }
+
+  .svg-container {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    background: url("./images/375.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 740px;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+  }
+
+  .header__logo {
+    padding: 16px 16px 40px;
+  }
+
+  .header__logo-text {
+    font-size: 14.42px;
+  }
+
+  .header__logo-horses svg {
+    width: 18.75px;
+    height: 27px;
+    gap: 1.5px;
+  }
+
+  .header__headline {
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  .merriweather-text {
+    text-align: left;
+    width: 335px;
+  }
+
+  .header__headline-middle {
+    text-align: center;
+  }
+
+  .header__headline-bottom {
+    text-align: right;
+  }
+
+  .header__headline h1 {
+    font-size: 36px;
+  }
+
+  .header__description {
+    margin: 24px auto 32px;
+    width: 335px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .header__buttons {
+    width: 335px;
+    margin: 0 auto;
+    gap: 14px;
+  }
+
+  .header__button {
+    width: 335px;
+    height: 47px;
+  }
+
+  .white-button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .ticker {
+    height: 38px;
+  }
+
+  .header__ticker span {
+    font-size: 16px;
+  }
+
+  .support,
+  .info,
+  .stages,
+  .members,
+  .footer__text,
+  .support__text {
+    max-width: 335px;
+  }
+
+  .support__text span:first-of-type::after {
+    content: "";
+    display: inline-block;
+    width: 335px;
+    height: 212.56px;
+    background: url("./images/support.png") no-repeat center;
+    background-size: contain;
+    margin: 24px auto 24px;
+    vertical-align: middle;
+  }
+
+  .support__image {
+    display: none;
+  }
+
+  .support__text span {
+    width: 335px;
+    font-size: 28px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .info__content {
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  .info__text .common-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info__text {
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  .common-text,
+  .red-text {
+    font-size: 28px;
+  }
+
+  .info__text .common-text span,
+  .info__text .common-text {
+    display: block;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    width: 335px;
+  }
+
+  .table tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #d0d0d0;
+    padding: 0;
+  }
+
+  .table tr:last-child {
+    border-bottom: none;
+  }
+  .table td:first-child {
+    width: 335px;
+  }
+  .table td {
+    flex: 1;
+    padding: 0 0 12px 0;
+    border: none;
+    width: 335px;
+    text-align: left;
+    font-size: 20px;
+  }
+  .table td + td {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .info__table {
+    margin-top: 44px;
+  }
+
+  .table tr > td:first-child {
+    padding: 12px 0 12px 0;
+  }
+
+  .info__admin {
+    margin-top: 40px;
+  }
+
+  .stages {
+    margin-top: 120px;
+  }
+
+  .stages__title-name {
+    width: 335px;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .stages__blue-title {
+    margin: 0;
+    padding: 12px 0 148px;
+  }
+
+  .stages__cards-mobile {
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 1835px;
+  }
+
+  .stages__card-mobile {
+    padding: 20px;
+    width: 335px;
+    height: 300px;
+    display: flex;
+    gap: 16px;
+    background-image: url(./images/card-back.png);
+    background-size: cover;
+    flex-shrink: 0;
+  }
+
+  .svg-container-mobile {
+    width: 36px;
+    height: 36px;
+  }
+
+  .svg-points-mobile {
+    width: 10px;
+    height: 10px;
+  }
+
+  .stages__buttons-mobile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .points-container-mobile {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .svg-points-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .svg-container-mobile {
+    cursor: pointer;
+  }
+
+  .arrow-left-mobile.disabled,
+  .arrow-right-mobile.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .stages__mobile-content {
+    width: 282px;
+    display: flex;
+    gap: 16px;
+  }
+
+  .stages__card-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .stages__card-text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .stages__card-mobile {
+    padding-top: 62px;
+  }
+
+  .stages__card-airplane-mobile {
+    display: block;
+    position: absolute;
+    width: 335px;
+    height: 182px;
+    top: 230px;
+    z-index: 10;
+  }
+
+  .members {
+    margin: 120px auto 176px;
+  }
+
+  .members__header {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .members__image {
+    width: 244px;
+    height: 244px;
+  }
+
+  .members__slide {
+    width: 335px;
+  }
+
+  .members__name {
+    font-size: 24px;
+  }
+
+  .members__descr {
+    font-size: 20px;
+  }
+
+  .members__slide-descr {
+    gap: 8px;
+  }
+
+  .members__buttons {
+    position: absolute;
+    top: 548px;
+    left: 103px;
+  }
+
+  .svg-container svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__text {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 40px 0 60px;
+  }
+}
